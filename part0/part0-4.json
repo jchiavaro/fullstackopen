@@ -1,0 +1,40 @@
+[
+  {
+    "state": {
+      "code": "sequenceDiagram\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes\n    Server->>Browser: Notes html document\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css\n    Server->>Browser: main.css file\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js\n    Server->>Browser: main.js file\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json\n    Server-->Browser: The data.json file\n    Browser-->Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note\n    Note left of Browser: The browser send the payload as a form data to the server\n    Note right of Server: The Server process the request and \"saves\" the note\n    Server-->Browser: Responds with a 302 HTTP code redirect\n    Browser-->Server: Makes 4 additional calls to get the html, css, js and json files\n",
+      "mermaid": "{\n  \"theme\": \"default\"\n}",
+      "autoSync": true,
+      "updateDiagram": true,
+      "editorMode": "code"
+    },
+    "time": 1676992857658,
+    "type": "manual",
+    "id": "c0f44bb4-55d6-4fe2-9800-9fc52e16ce40",
+    "name": "brief-coat"
+  },
+  {
+    "state": {
+      "code": "sequenceDiagram\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes\n    Server->>Browser: Notes html document\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.css\n    Server->>Browser: main.css file\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/main.js\n    Server->>Browser: main.js file\n    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/data.json\n    Server-->Browser: The data.json file\n    Browser-->Server: POST https://studies.cs.helsinki.fi/exampleapp/new_note\n    Note left of Browser: The browser send the payload as a form data to the server\n    Note right of Server: The Server process the request and \"saves\" the note\n    Server-->Browser: Responds with a 302 HTTP code redirect\n    Browser-->Server: Makes 4 additional calls to get the html, css, js and json files\n",
+      "mermaid": "{\n  \"theme\": \"default\"\n}",
+      "autoSync": true,
+      "updateDiagram": false,
+      "editorMode": "code"
+    },
+    "time": 1676992599887,
+    "type": "manual",
+    "id": "b9fc8af8-d141-4291-a74d-5080dd635783",
+    "name": "warm-controller"
+  },
+  {
+    "state": {
+      "code": "flowchart TD\n    A[Christmas] -->|Get money| B(Go shopping)\n    B --> C{Let me think}\n    C -->|One| D[Laptop]\n    C -->|Two| E[iPhone]\n    C -->|Three| F[fa:fa-car Car]\n  ",
+      "mermaid": "{\n  \"theme\": \"default\"\n}",
+      "autoSync": true,
+      "updateDiagram": true
+    },
+    "time": 1676990291120,
+    "type": "manual",
+    "id": "a2a7a4da-224c-4deb-b838-571a6da2189c",
+    "name": "sticky-state"
+  }
+]
